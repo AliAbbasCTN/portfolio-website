@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Ali Abbas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Ali Abbas</div>
+
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+    <ul class="nav-links" id="nav-links">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="skill.html">Skill</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <section class="skills-section">
+    <h2>Technical Skills</h2>
+    <p>Below is a list of my core technical skills that I’ve built through academic projects and personal learning:</p>
+
+    <ul class="skills-list">
+      <li><strong>HTML5:</strong> Semantic, accessible markup structure</li>
+      <li><strong>CSS3:</strong> Responsive design, Flexbox, Grid</li>
+      <li><strong>JavaScript:</strong> DOM manipulation, dynamic forms</li>
+      <li><strong>C++:</strong> OOP, file handling, data structures</li>
+      <li><strong>Version Control:</strong> Git & GitHub collaboration</li>
+      <li><strong>Responsive Design:</strong> Mobile-first UI development</li>
+      <li><strong>ATS Resume Design:</strong> Optimized for applicant tracking systems</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ali Abbas. All rights reserved.</p>
+  </footer>
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+
+</html>

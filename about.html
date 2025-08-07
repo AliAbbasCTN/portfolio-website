@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ali Abbas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Ali Abbas</div>
+
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+    <ul class="nav-links" id="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+    
+      <li><a href="skill.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm Ali Abbas, a passionate Computer Science student at Namal University. My journey into the tech world started with curiosity and quickly grew into a strong dedication to web development and programming. I enjoy solving problems, building functional websites, and writing clean, efficient code.</p>
+
+    <p>With a special interest in both frontend design and backend logic (especially C++), I aim to craft digital experiences that are simple, elegant, and purposeful. Apart from development, I’m also exploring opportunities in freelancing and future preparation for competitive exams like CSS and ISSB.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ali Abbas. All rights reserved.</p>
+  </footer>
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+
+</html>

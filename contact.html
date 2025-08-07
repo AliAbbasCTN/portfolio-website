@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ali Abbas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Ali Abbas</div>
+
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out via any of the methods below.</p>
+
+    <ul class="contact-info">
+      <li><strong>Email:</strong> aliabbasctn27@gmail.com</li>
+      <li><strong>WhatsApp:</strong> +923047639968</li>
+      <li><strong>Fiverr:</strong> <a href="https://fiverr.com/aliabbas" target="_blank">fiverr.com/aliabbas</a></li>
+    </ul>
+
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+
+  <input type="hidden" name="form-name" value="contact">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  
+  <button type="submit">Send</button>
+  <p id="form-status"></p>
+</form>
+
+
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ali Abbas. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector(".contact-form");
+    const status = document.getElementById("form-status");
+
+    
+      status.textContent = "Message sent! I’ll get back to you soon.";
+      form.reset();
+      setTimeout(() => (status.textContent = ""), 4000);
+    });
+  </script>
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+
+</html>

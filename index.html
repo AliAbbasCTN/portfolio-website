@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Abbas - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Ali Abbas</div>
+
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <header class="header">
+    <img src="Ali7.jpg" alt="Ali Abbas" class="profile-pic">
+    <h1>Ali Abbas</h1>
+    <p>Web Developer | C++ Programmer | Namal University</p>
+  </header>
+  
+
+  <footer class="footer">
+    <p>&copy; 2025 Ali Abbas. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+
+</html>
